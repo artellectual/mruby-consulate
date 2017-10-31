@@ -1,0 +1,6 @@
+name: mruby-consulate
+description: Consulate class
+author: Zack Siri
+website: https://github.com/artellectual/mruby-consulate
+protocol: git
+repository: https://github.com/artellectual/mruby-consulate.git
