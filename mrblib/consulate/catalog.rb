@@ -6,7 +6,6 @@ module Consulate
     attr_reader :base_url
 
     def initialize
-      @http = HttpRequest.new
       @base_url = format('%s/%s', Consulate.endpoint, RESOURCE)
     end
 
@@ -14,7 +13,7 @@ module Consulate
       # Lists out services
       url = format('%s/%s', base_url, 'services'.freeze)
 
-      JSON.parse(@http.get(url)['body'])
+      JSON.parse(Consulate.http.get(url)['body'])
     end
   end
 end
