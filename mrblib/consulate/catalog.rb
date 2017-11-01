@@ -3,7 +3,7 @@ module Consulate
   class Catalog
     RESOURCE = 'catalog'.freeze
 
-    attr_reader :http
+    attr_reader :base_url
 
     def initialize
       @http = HttpRequest.new
@@ -12,9 +12,9 @@ module Consulate
 
     def services
       # Lists out services
-      url = format('%s/%s', @base_url, 'services'.freeze)
+      url = format('%s/%s', base_url, 'services'.freeze)
 
-      JSON.parse(http.get(url)['body'])
+      JSON.parse(@http.get(url)['body'])
     end
   end
 end
