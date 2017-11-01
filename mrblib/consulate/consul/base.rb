@@ -11,7 +11,7 @@ module Consulate
           self.class::RESOURCE
         )
 
-        @http = Consulate.http
+        @http = HttpRequest.new
       end
 
       protected
