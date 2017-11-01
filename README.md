@@ -1,25 +1,17 @@
 # mruby-consulate   [![Build Status](https://travis-ci.org/artellectual/mruby-consulate.svg?branch=master)](https://travis-ci.org/artellectual/mruby-consulate)
-Consulate class
+
+Under Heavy Development Documentation Coming Soon.
+
 ## install by mrbgems
 - add conf.gem line to `build_config.rb`
 
 ```ruby
 MRuby::Build.new do |conf|
 
-    # ... (snip) ...
+  # ... (snip) ...
 
-    conf.gem :github => 'artellectual/mruby-consulate'
+  conf.gem :github => 'artellectual/mruby-consulate'
 end
-```
-## example
-```ruby
-p Consulate.hi
-#=> "hi!!"
-t = Consulate.new "hello"
-p t.hello
-#=> "hello"
-p t.bye
-#=> "hello bye"
 ```
 
 ## License
