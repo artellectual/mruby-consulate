@@ -1,13 +1,10 @@
 # Consulate Module
-
 module Consulate
   class << self
-    def endpoint
-      @endpoint ||= "http://127.0.0.1:8500/v1"
-    end
+    attr_writer :endpoint
 
-    def endpoint=(url)
-      @endpoint = url
+    def endpoint
+      @endpoint ||= 'http://127.0.0.1:8500/v1'
     end
   end
 end
